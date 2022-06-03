@@ -1,0 +1,9 @@
+<view class="category-box-right">
+  <view class="category-box-right-title">{{categoryData.info.title}}</view>
+  <view class="category-box-right-list">
+    <view wx:for="{{categoryData.list}}" class="category-box-right-item" wx:key="index">
+      <image src="{{item.image}}"></image>
+      <text calss="category-box-right-item-text">{{item.title}}</text>
+    </view>
+  </view>
+</view>

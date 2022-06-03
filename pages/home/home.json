@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "goods-list":"/components/goodsList/goodsList"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ff8198",
+  "navigationBarTitleText": "烟霞问讯",
+  "navigationBarTextStyle": "white"
+}

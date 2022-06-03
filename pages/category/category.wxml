@@ -1,0 +1,23 @@
+<view>
+  <view class="category-nav" bindtap="navClick">
+    <view wx:for="{{categoriesNav}}" wx:key="index" data-navKey="{{item}}" class="category-nav-item {{navkey === item?'nav-active':''}}" >{{item}}</view>
+  </view>
+  <view class="category" wx:if="{{navkey === '更多分类'}}">
+    <view class="category-box">
+      <scroll-view scroll-y="true" class="scoll-category-left" show-scrollbar="false" enhanced="true">
+        <category-left categories="{{categories}}" bind:updataSelect="tabClick"></category-left>
+      </scroll-view>
+      <scroll-view scroll-y="true" class="scoll-category-right" scroll-anchoring="true" scroll-top="{{scrollTop}}">
+        <category-right categoryData="{{categoryData}}"></category-right>
+      </scroll-view>
+    </view>
+  </view>
+  <view wx:if="{{navkey === '店铺精选'}}">
+    <scroll-view scroll-x="true" class="scoll-category-top" show-scrollbar="false" enhanced="true">
+      <category-left categoryDetailRight="1" categories="{{categories}}" bind:updataSelect="tabClick"></category-left>
+    </scroll-view>
+    <scroll-view scroll-y="true" class="scoll-category-bottom" scroll-top="{{scrollTop}}">
+      <category-detail-right CategoryList="{{CategoryList}}"></category-detail-right>
+    </scroll-view>
+  </view>
+</view>

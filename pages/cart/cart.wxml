@@ -1,0 +1,53 @@
+<view class="cart">
+  <scroll-view scroll-y="true" style="height: calc(100vh - 49px);">
+    <view wx:for="{{CartList}}" wx:key="index" class="cart-item"  bindlongpress="longPressCart" data-id="{{item.id}}">
+      <view class="cart-item-had">
+        <view class="cart-item-had-title">
+          <view class="iconfont icon-dianpufill"></view>
+          <view>{{item.shopName}}</view>
+        </view>
+        <view class="cart-item-had-quan">领券</view>
+      </view>
+      <view class="cart-item-box">
+        <view class="cart-chk-wrap">
+          <checkbox-group data-id="{{item.id}}" bindchange="handleChange">
+            <checkbox color="#ff8198" checked="{{item.checked}}"></checkbox>
+          </checkbox-group>
+        </view>
+        <view class="cart-img-wrap">
+          <image mode="aspectFill" src="{{item.imges}}"></image>
+        </view>
+        <view class="cart-info-warp">
+          <text class="info-goods-title">{{item.title}}</text>
+          <text class="info-goods-desc">{{item.desc}}</text>
+          <view class="price-connt">
+            <view class="info-price">￥{{item.price}}</view>
+            <view class="cart-num">
+              <view class="num-edit" bindtap="reduceClick" data-id="{{item.id}}">-</view>
+              <view class="goods-count">{{item.count}}</view>
+              <view class="num-edit" bindtap="addClick" data-id="{{item.id}}">+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{CartList.length === 0}}" class="isCartList">您的购物车空空的，快去添加~</view>
+  </scroll-view>
+
+  <view class="cart-navbar">
+    <view class="navbar-chk">
+      <checkbox-group bindchange="handleAllChange">
+        <checkbox color="#ff8198" checked="{{allChecked}}">全选</checkbox>
+      </checkbox-group>
+    </view>
+    <view class="navbar-price">合计：￥<text>{{totalPrice}}</text></view>
+    <view class="navbar-price-button">结算</view>
+  </view>
+
+  <view class="cart-operation {{iSoperation === true?'operation-true':''}}" bindtap="showOperation">
+    <view class="operation-box" catchtap="operation-box">
+      <view class="cart-operation-item operation-collect">加入收藏</view>
+      <view class="cart-operation-item operation-delete" bindtap="deleteClick">删除</view>
+    </view>
+  </view>
+</view>

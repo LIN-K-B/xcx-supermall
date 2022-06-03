@@ -1,0 +1,14 @@
+<!--component/goodsList/goodsList.wxml-->
+<view class="goods">
+    <view class="goods-item" wx:for="{{showGoods}}" wx:key="item">
+    <navigator url="/subPack/pages/detail/detail?id={{item.iid}}">
+      <image src="{{item.show.img || item.image}}" mode='widthFix' lazy-load="true"></image>
+      <view class="goods-info">
+        <view class="goods-title">{{item.title}}</view>
+        <text class="goods-price">{{item.price}}</text>
+        <icon class="iconfont icon-xingxing"></icon>
+        <text class="goods-cfav">{{item.cfav}}</text>
+      </view>
+    </navigator>
+    </view>
+  </view>

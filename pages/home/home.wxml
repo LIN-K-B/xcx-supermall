@@ -1,0 +1,32 @@
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view wx:else>
+  <!-- <scroll-view scroll-y="true" style="height: 100vh;" bindscroll="homeScrollTop" bindscrolltolower="homeScrollBottom" scroll-top="{{scrollTop}}"> -->
+    <view>
+      <swiper class="swiper" indicator-dots="true" autoplay="true" indicator-color="#fff" indicator-active-color="#ff5777" circular="true">
+        <swiper-item wx:for="{{bannerList}}" wx:key="item" class="swiper-item">
+          <image src="{{item.image}}"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="recommend">
+      <view wx:for="{{recommend}}" wx:key="item" class="recommend-item">
+        <image src="{{item.image}}"></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+
+    <view class="feature">
+      <image src="/assets/image/recommend_bg.jpg" mode="widthFix"></image>
+    </view>
+    <view class="tab-control">
+    <!-- <view class="tab-control {{tabControlTop <= 0?'tab-top':'f-tab-top'}}"> -->
+      <view class="tab-control-item {{index == navIndex?'active':''}}" wx:for="{{titles}}" wx:key="index" data-index="{{index}}" bindtap="itemClick">
+        <text>{{item}}</text>
+      </view>
+    </view>
+    <!-- 首页推荐列表 -->
+    <scroll-view scroll-y="{{isScrollY}}" style="height: 100vh;" bindscroll="homeScrollTop" bindscrolltolower="homeScrollBottom" scroll-top="{{scrollTop}}">
+      <goods-list showGoods="{{showGoods}}"></goods-list>
+  </scroll-view>
+</view>

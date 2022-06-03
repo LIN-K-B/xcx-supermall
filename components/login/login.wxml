@@ -1,0 +1,13 @@
+<view class="login-container">
+  <view class="login-container-box">
+    <view>
+      <!-- 提示登录的图标 -->
+      <icon class="iconfont icon-morentouxiang"></icon>
+    </view>
+    <!-- 登录按钮 -->
+    <!-- open-type="getUserInfo" 属性，表示点击按钮时，希望获取用户的基本信息 -->
+    <button type="primary" type="warn" plain="true" class="btn-login" open-type="getUserInfo" bindtap="getUserInfo">一键登录</button>
+    <!-- 登录提示 -->
+    <view class="tips-text">登录后尽享更多权益</view>
+  </view>
+</view>

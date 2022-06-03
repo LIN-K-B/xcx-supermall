@@ -1,0 +1,66 @@
+.dialogZ{
+  background-color: rgb(0, 0, 0,.9);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  visibility:hidden;
+  z-index: 999;
+  transition-duration: .5s;
+  /* transition-delay:.1s; */
+  transition-property:visibility; 
+  /* Safari */
+  -webkit-transition-duration: .5s;
+  -webkit-transition-property: visibility;
+}
+.dialogZ-true{
+  visibility: visible;
+}
+.dialog {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0;
+  z-index: 9999;
+  border-radius: 18px 18px 0 0;
+  position: fixed;
+  /* position: absolute; */
+  /* bottom: -20%; */
+  bottom:auto;
+  width: 100%;
+  transition-duration: .5s;
+  /* transition-delay:.1s; */
+  transition-property:bottom; 
+  /* Safari */
+  -webkit-transition-duration: .5s;
+  -webkit-transition-property: bottom;
+  /* -webkit-transition-delay:.1s; */
+}
+
+.dialog-title {
+  text-align: center;
+  line-height: 50px;
+}
+
+.dialog-box {
+  width: 100%;
+}
+.dialog-button{
+  height: 40px;
+  line-height: 40px;
+  width: 90%;
+  background-color: rgb(255, 0, 76);
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 18px;
+  margin: 15px auto;
+}
+.iSdialog-true {
+  bottom: 0%;
+}
+
+.iSdialog-false {
+  bottom: -100%;
+}
+

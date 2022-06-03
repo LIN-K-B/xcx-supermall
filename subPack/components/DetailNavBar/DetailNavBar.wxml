@@ -1,0 +1,7 @@
+<view>
+  <view class="detail-navbar">
+    <view class="detail-navbar-back" bindtap="goBack">
+      <icon class="iconfont icon-fanhui ico"></icon>
+    </view>
+  </view>
+</view>

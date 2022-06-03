@@ -1,0 +1,177 @@
+@import '/assets/iconfont/iconfont.wxss';
+
+.cart{
+  background-color: rgba(175, 175, 175, 0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.isCartList{
+  text-align: center;
+  margin: 50% auto;
+  color: #666;
+}
+.cart-item{
+  padding: 15px 0;
+  margin: 8px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.cart-item-box{
+  display: flex;
+  align-items: center;
+}
+.cart-item-had{
+  display: flex;
+  margin-left: 8%;
+  padding: 10px 12px;
+  justify-content: space-between;
+}
+.cart-item-had-title{
+  display: flex;
+}
+.cart-item-had-title .iconfont{
+  color: rgb(255, 0, 85);
+  font-size: 22px;
+  padding-right: 10px;
+}
+.cart-item-had-quan{
+  font-size: 14px;
+  color: rgb(255, 0, 85);
+}
+.cart-chk-wrap{
+  width: 50px;
+  text-align: center;
+}
+.cart-info-warp{
+  display: flex;
+  flex-direction: column;
+}
+.cart-img-wrap image{
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 10px;
+}
+.cart-info-warp{
+  padding: 0 24rpx;
+}
+.info-goods-title,
+.info-goods-desc{
+  font-size: 20px;
+  color: #000;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;/*当属性值为3，表示超出3行隐藏 */
+}
+.info-goods-desc,
+.price-connt{
+  margin: 16rpx 0;
+}
+.info-goods-desc{
+  font-size: 13px;
+  color: #555;
+  -webkit-line-clamp: 1;
+}
+.price-connt{
+  display: flex;
+  align-items: center;
+
+}
+.info-price,
+.cart-num{
+  flex: 1;
+  padding: 0 10rpx;
+}
+.info-price{
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+.cart-num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods-count,
+.num-edit{
+  padding: 6rpx 14rpx;
+}
+.num-edit{
+  border: 1px solid #ccc;
+}
+
+
+
+.cart-navbar{
+  height: 49px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.navbar-chk{
+  padding: 0 10px;
+  display: flex;
+  flex: 1;
+  flex-shrink: 0;
+  align-items: center;
+}
+.navbar-price{
+  padding: 0 20rpx;
+  font-size: 13px;
+}
+.navbar-price>text{
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 0, 0);
+}
+.navbar-price-button{
+  background-color: rgb(255, 0, 85);
+  width: 200rpx;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 18px;
+  margin-right:3px;
+}
+
+
+.cart-operation{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.operation-true{
+  display: block;
+}
+.operation-box{
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.cart-operation-item{
+  width: 100%;
+  padding: 10px 0;
+  text-align: left;
+  text-indent: 15%;
+  background-color: #fff;
+}
+.operation-collect{
+  border-bottom: 1px solid rgb(112, 112, 112,.2);
+}

@@ -1,0 +1,3 @@
+<view class="back-top" bindtap="backTop">
+    <icon class="iconfont icon-tubiao02"></icon>
+  </view>

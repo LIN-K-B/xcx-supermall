@@ -1,0 +1,16 @@
+<view class="dialogZ {{show === true?'dialogZ-true':''}}">
+  <view class="dialog {{show === true?'iSdialog-true':'iSdialog-false'}}">
+    <view class="dialog-title">
+      <!-- 标题 -->
+      <slot name="title"></slot>
+    </view>
+    <view class="dialog-box">
+      <scroll-view scroll-y="true" style="height:50vh;">
+        <view>
+          <slot name="box"></slot>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="dialog-button" bindtap="dialogButton">完成</view>
+  </view>
+</view>

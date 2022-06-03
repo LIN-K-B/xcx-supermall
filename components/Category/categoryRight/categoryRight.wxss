@@ -1,0 +1,27 @@
+.category-box-right{
+  flex: 1;
+  background-color: #ffffff;
+  margin: 0px 10px 20px 0;
+  padding: 20px 0;
+  border-radius: 0 18px 18px 18px;
+  padding: 0 10px;
+}
+.category-box-right-title{
+  padding: 20px;
+  text-align: center;
+}
+.category-box-right-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-box-right-item{
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+.category-box-right-item>image{
+  width: 70px;
+  height: 70px;
+}

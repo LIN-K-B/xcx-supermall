@@ -1,0 +1,107 @@
+{
+  "id": "3428129",
+  "name": "supermall-weixin",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6129178",
+      "name": "138设置、系统设置、功能设置、属性",
+      "font_class": "shezhixitongshezhigongnengshezhishuxing",
+      "unicode": "e795",
+      "unicode_decimal": 59285
+    },
+    {
+      "icon_id": "351755",
+      "name": "勾选",
+      "font_class": "gouxuan",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "1119623",
+      "name": "swt-icon-快递 (1)",
+      "font_class": "swticonkuaidi1",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "781035",
+      "name": "余额支付",
+      "font_class": "yuezhifu",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "1328101",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "1346662",
+      "name": "默认头像",
+      "font_class": "morentouxiang",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "5543855",
+      "name": "积分商城",
+      "font_class": "jifenshangcheng",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "12750921",
+      "name": "会员",
+      "font_class": "huiyuan",
+      "unicode": "e825",
+      "unicode_decimal": 59429
+    },
+    {
+      "icon_id": "5483673",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e71a",
+      "unicode_decimal": 59162
+    },
+    {
+      "icon_id": "258548",
+      "name": "回到顶部",
+      "font_class": "tubiao02",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "577332",
+      "name": "店铺-fill",
+      "font_class": "dianpufill",
+      "unicode": "e735",
+      "unicode_decimal": 59189
+    },
+    {
+      "icon_id": "782377",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "816606",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "829167",
+      "name": "聚收藏gift",
+      "font_class": "jushoucanggift",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    }
+  ]
+}

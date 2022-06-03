@@ -1,0 +1,42 @@
+@import '/assets/iconfont/iconfont.wxss';
+
+.bottom-bar{
+  height: 52px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0,.1);
+}
+.bar-item{
+  flex: 1;
+  display: flex;
+}
+.bar-item>view{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.bar-left {
+  text-align: center;
+}
+.bar-left .iconfont{
+  font-size:28px;
+  color: rgb(28, 13, 17);
+}
+.bar-right{
+  font-weight: bold;
+  line-height: 52px;
+  text-align: center;
+}
+.bar-right .cart{
+  background-color: rgb(255, 145, 0);
+  color: #fff;
+  padding: 0 4rpx;
+}
+.bar-right .buy{
+  color: #fff;
+  background-color: #f7083c;
+}

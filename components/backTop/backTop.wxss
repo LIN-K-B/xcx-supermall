@@ -1,0 +1,13 @@
+@import '/assets/iconfont/iconfont.wxss';
+.back-top{
+  color: #fff;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0,.2);
+  border-radius: 50%;
+  position: fixed;
+  top: 70%;
+  right: 3%;
+  z-index: 999;
+}

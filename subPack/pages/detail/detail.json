@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "goods-list":"/components/goodsList/goodsList",
+    "detail-navbar":"/subPack/components/DetailNavBar/DetailNavBar",
+    "detail-botton-bor":"/subPack/components/DetailBottonBor/DetailBottonBor",
+    "back-top":"/components/backTop/backTop",
+    "dialog":"/components/dialog/dialog"
+    
+  },
+  "navigationStyle": "custom"
+}

@@ -1,0 +1,60 @@
+<view>
+  <view class="profile">
+    <view class="profile-userinfo">
+      <view  class="profile-userinfo-box">
+        <view class="userinfo-image">
+          <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="userinfo-title">
+          <text wx:if="{{userInfo.nickName}}">{{userInfo.nickName}}</text>
+          <text wx:else>登录/注册</text>
+        </view>
+      </view>
+    </view>
+    <view class="profile-list">
+      <view class="profile-list-top">
+        <view class="profile-list-top-item">
+          <text class="iconfont icon-yuezhifu"></text>
+          <text>余额</text>
+        </view>
+        <view class="profile-list-top-item">
+          <text class="iconfont icon-dianpufill"></text>
+          <text>店铺</text>
+        </view>
+        <view class="profile-list-top-item">
+          <text class="iconfont icon-swticonkuaidi1"></text>
+          <text>快递</text>
+        </view>
+        <view class="profile-list-top-item">
+          <text class="iconfont icon-jushoucanggift"></text>
+          <text>喜欢</text>
+        </view>
+      </view>
+      <view class="profile-list-content">
+        <view class="profile-list-content-item">
+          <icon class="iconfont icon-xiaoxi"></icon>
+          <text class="content-item-title">我的消息</text>
+        </view>
+        <view class="profile-list-content-item">
+          <icon class="iconfont icon-jifenshangcheng"></icon>
+          <text class="content-item-title">积分商城</text>
+        </view>
+        <view class="profile-list-content-item">
+          <icon class="iconfont icon-huiyuan"></icon>
+          <text class="content-item-title">会员卡</text>
+        </view>
+      </view>
+      <view class="profile-list-bottom">
+        <view class="profile-list-bottom-item">
+          <icon class="iconfont icon-kefu"></icon>
+          <text>客服</text>
+        </view>
+        <view class="profile-list-bottom-item" bindtap="logout" wx:if="{{userInfo.nickName}}">
+          <icon class="iconfont icon-shezhixitongshezhigongnengshezhishuxing"></icon>
+          <text>退出登录</text>
+        </view>
+      </view>
+    </view>
+    <button wx:if="{{!userInfo.nickName}}" type="primary" type="warn" plain="true" class="btn-login" open-type="getUserInfo" bindtap="getUserInfo">一键登录</button>
+  </view>
+</view>

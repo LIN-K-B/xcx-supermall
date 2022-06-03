@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "category-left":"/components/Category/categoryLeft/categoryLeft",
+    "category-right":"/components/Category/categoryRight/categoryRight",
+    "category-detail-right":"/components/Category/categoryDetailRight/categoryDetailRight"
+  }
+}
